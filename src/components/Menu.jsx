@@ -1,13 +1,26 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Alert } from "react-native";
+import { Text, View, TouchableOpacity, Alert } from "react-native";
+import styles from "../styles/StyleMenu";
 
 const Menu = () => {
-  let alarmEvolucion = ()=> {Alert.alert("Botón evolución pulsado")}
-  let alarmNuevoReto = ()=> {Alert.alert("Botón Nuevo Reto pulsado")}
-  let alarmPerfil = ()=> {Alert.alert("Botón Perfil pulsado")}
-  let alarmContactar = ()=> {Alert.alert("Botón evolución pulsado")}
-  let alarmSobreNosotros = ()=> {Alert.alert("Botón Sobre Nosotros pulsado")}
-  let alarmConfiguracion = ()=> {Alert.alert("Botón Configuración pulsado")}
+  let alarmEvolucion = () => {
+    Alert.alert("Botón evolución pulsado");
+  };
+  let alarmNuevoReto = () => {
+    Alert.alert("Botón Nuevo Reto pulsado");
+  };
+  let alarmPerfil = () => {
+    Alert.alert("Botón Perfil pulsado");
+  };
+  let alarmContactar = () => {
+    Alert.alert("Botón evolución pulsado");
+  };
+  let alarmSobreNosotros = () => {
+    Alert.alert("Botón Sobre Nosotros pulsado");
+  };
+  let alarmConfiguracion = () => {
+    Alert.alert("Botón Configuración pulsado");
+  };
   return (
     <View style={styles.container}>
       <View style={styles.Row1}>
@@ -23,7 +36,7 @@ const Menu = () => {
       </View>
 
       <View style={styles.Row2}>
-        <TouchableOpacity style={styles.button} onPress={alarmContactar}> 
+        <TouchableOpacity style={styles.button} onPress={alarmContactar}>
           <Text>Contactar</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={alarmSobreNosotros}>
@@ -36,30 +49,5 @@ const Menu = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 0,
-    flexDirection: "column",
-  },
-  Row1: {
-    flex: 0,
-    flexDirection: "row",
-  },
-  Row2: {
-    flex: 0,
-    flexDirection: "row",
-  },
-  button: {
-    flex: 1,
-    width: "40%",
-    height: 60,
-    backgroundColor: "#29A56C",
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: 1,
-    borderColor: "black",
-  },
-});
 
 export default Menu;
