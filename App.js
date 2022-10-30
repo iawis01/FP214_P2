@@ -1,10 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import Main from "./src/components/Main";
+import Inicio from "./src/components/Inicio";
+import Menu from "./src/components/Menu";
+
 
 export default function App() {
   return (
-     <Main/>
+     <><Inicio /><Menu /></>
+     
   );
 }
 

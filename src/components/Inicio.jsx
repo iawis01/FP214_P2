@@ -1,12 +1,12 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import Constants from 'expo-constants'
-import{StyleSheet,Image, Text, View,ImageBackground} from 'react-native'
+import{StyleSheet,Image, View,} from 'react-native'
 import imagenDeFondo from '../../assets/background_image.jpg'
+//import styles from './Inicio.module.css';
 
-const Main = () =>{
+
+const Inicio = () =>{
   return(
-    <View style={{marginTop: 0, flexGrow: 1}}>
+    <View style={styles.container}>
       <Image source={imagenDeFondo} style={styles.ImageBackground}>
      </Image>
      
@@ -16,10 +16,8 @@ const Main = () =>{
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    marginTop: 0,
+    flexGrow: 1
   },
   ImageBackground: {
     flex: 1,
@@ -30,4 +28,4 @@ const styles = StyleSheet.create({
  
  });
 
-export default Main
+export default Inicio
