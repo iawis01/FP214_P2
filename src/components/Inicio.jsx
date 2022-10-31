@@ -7,7 +7,9 @@ const Inicio = () => {
   return (
     <View style={styles.container}>
       <Image source={imagenDeFondo} style={styles.ImageBackground}></Image>
+      <Menu />
     </View>
+    
   );
 };
 
